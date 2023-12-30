@@ -1,0 +1,329 @@
+/* Optimización de bordes de toda la página*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+/*configuración estilo del navegador*/
+nav {
+	text-align: right;
+	height: 50px;
+	line-height: 1px;
+	padding: 12px 50px 0 0;
+	background-color: rgb(138, 124, 113);
+	font: bold 20px letra, Verdana, sans-serif;	
+}
+nav > a {
+	color: rgb(247, 240, 240);
+	font-weight: 300;
+	text-decoration: none;
+	margin-right: 10px;
+}
+nav > a:hover { /*efecto que al pasar el puntero aparece la palabra subrayada*/
+	text-decoration: underline;
+}
+/* Efecto de ola, ondulación del encabezado */
+.wave {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: calc(100vh - 50px);
+}
+/*configuración estilo de tipo de letra*/
+h1 {
+	
+	font: bold 50px letra, Verdana, sans-serif;
+	text-indent: 230px;
+	background-image: url('../imagenes/logoestratega.png');
+	background-repeat: no-repeat;
+	background-position: 50px;
+	background-size: contain;
+	height: 150px;
+	padding-top: 10px;
+
+}
+h2 {
+	font: bold 35px letra, Verdana, sans-serif;
+	margin-left: 50px;
+	text-indent: 185px;
+}
+h3 {
+	font: bold 30px letra, Verdana, sans-serif;
+	margin-right: 50px;
+	padding-top: 50px;
+	text-align: right;
+}
+h4{
+	font: bold 30px letra, Verdana, sans-serif;
+	margin-right: 50px;
+	text-align: right;
+}
+h5{
+	font: bold 20px letra, Verdana, sans-serif;
+	margin-right: 50px;
+	padding-top: 50px;
+	text-align: right;
+}
+.principal h2{
+	font: bold 60px letra, Verdana, sans-serif;
+	margin-left: 50px;
+	
+}
+.principal h3{
+	font: bold 28px letra, Verdana, sans-serif;
+	margin-left: 50px;
+}
+.principal p{
+	font: bold 20px letra, Verdana, sans-serif;
+	margin-left: 50px;
+	
+}
+.principal2 {
+	font: bold 15px letra, Verdana, sans-serif;
+	margin-left: 50px;
+}
+@font-face {
+	
+	font-family: "letra";
+	src: url("../config/Lato/Lato-Light.ttf");
+}
+
+/*configuración estilo del banner y sus efectos*/
+.banner {
+	position: relative;
+	background-attachment: fixed;
+	width: 100%;
+	height: calc(100vh - 50px);
+	background: color #f5f5f5;
+	background-size: cover;
+	background-position: center;
+	transition: all .1s ease-in-out;
+	animation: banner 28s infinite linear;
+	animation-timing-function:ease-in-out;
+	
+}
+.banner-content {
+	margin: 0%;
+	padding-top: 0px;
+	width: 100%;
+	height: 92%; /*altura de la transparencia texto h1*/
+	color: #fff;
+	background-color: rgba(0, 22, 40, .6);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+}
+.banner-content h1 { /*afecta estilos de h1 en movimiento*/
+	height: 100px;
+	margin: 0;
+	padding: 10px;
+	padding-bottom: 0px;
+	font-size: 60px;
+
+	
+}
+
+.banner-content {
+    animation: 7s none alternate efectotexto;
+}
+   
+  @keyframes efectotexto {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+.banner-content a{
+	text-decoration: none;
+	color: #fff;
+	padding: 9px 20px;
+	border: 1px solid #fff;
+	text-transform: uppercase;
+	transition: all .3s ease-in-out;
+}
+.banner-content a:hover{
+	background-color: #fff;
+	color: #333;
+}
+@keyframes banner {
+	0% {background-image: url(../imagenes/reunion.jpg);}
+	30% {background-image: url(../imagenes/reunion.jpg);}
+
+	35% {background-image: url(../imagenes/capacitacion.jpg);}
+	65% {background-image: url(../imagenes/capacitacion.jpg);}
+
+	70% {background-image: url(../imagenes/colaboracion.jpg);}
+	100% {background-image: url(../imagenes/colaboracion.jpg);}
+}
+
+
+.principal {
+	padding: 60px 0;
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+	height: 100%;
+}
+
+.titulo {
+	color: #642a73;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+/*Nuestros Servicios*/
+.servicios {
+	display: flex;
+	justify-content: space-evenly;
+}
+.imagenservicios {
+	width: 500px;
+	height: 1500px;
+	image-rendering: auto;
+
+}
+.servicios .textoservicios{
+	width: 48%;
+}
+.textoservicios h3 {
+	margin-bottom: 25px;
+	text-align: left;
+	margin-left: 20px;
+}
+.textoservicios h3 span {
+	background:#4d0686;
+	color: #fff;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	padding: 2px;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+	margin-right: 5px;
+}
+.textoservicios p {
+padding: 0px 0px 30px 15px;
+font-weight: 400;
+text-align: justify;
+margin-left: 30px;
+}
+/*Galeria*/
+.contabilidad {
+	background: #cccbd6;
+	height: 300px;
+	
+}	
+.galeria-contab {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	font: bold 11px letra, Verdana, sans-serif;
+}
+.imagen-contab {
+	width: 24%;
+	height: 150px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, .5);
+}
+.imagen-contab > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+.hover-galeria {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	transform: scale(0);
+	background: hsla(273, 91%, 27%, 0.7);
+	transition: transform .5s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.hover-galeria img {
+	width: 50px;
+}
+.hover-galeria p{
+	color: #fff;
+}
+.imagen-contab:hover .hover-galeria {
+	transform: scale(1);
+}
+
+footer {
+	padding: 50px 0;
+	color: #adb8c0;
+	background: #31404a;
+	text-align: center;
+}
+form {
+	width: 629px;
+	margin: auto;
+	background-color: #4d0686;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	box-shadow: 0 0 40px #333;
+}
+form h3{
+	color:white;
+}
+input {
+	margin: 15px;
+	padding: 10px;
+	width: 600px;
+	font-size: 18px;
+	border: none;
+	margin-bottom: 5px;;
+}
+input [type="submit"]{
+	margin-bottom: 15px;
+	margin-top: 5px;
+}
+textarea {
+	font-size: 18px;
+	margin: 15px;
+	padding: 10px;
+	min-width: 600px;
+	max-width: 600px;
+	min-height: 400px;
+	max-height: 200px;
+}
+
+#boton {
+	background: #5b6274;
+	color: #fff;
+	padding: 20px;
+}
+#boton:hover {
+	cursor: pointer;
+}
+@media (max-width:480px) {
+	form{
+		width: 100%;
+	}
+}
+#salida {
+	text-align: center;
+	color: black;
+	font-size: 40px;
+	background: rgba(0, 0, 0, .3);
+	margin-top: 0px;
+}

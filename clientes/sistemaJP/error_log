@@ -1,0 +1,28 @@
+[28-Apr-2021 19:52:31 America/Mexico_City] PHP Warning:  include(../../functions.php): failed to open stream: No such file or directory in /home4/estrat47/public_html/clientes/sistemaEA/index.php on line 18
+[28-Apr-2021 19:52:31 America/Mexico_City] PHP Warning:  include(../../functions.php): failed to open stream: No such file or directory in /home4/estrat47/public_html/clientes/sistemaEA/index.php on line 18
+[28-Apr-2021 19:52:31 America/Mexico_City] PHP Warning:  include(): Failed opening '../../functions.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home4/estrat47/public_html/clientes/sistemaEA/index.php on line 18
+[28-Apr-2021 19:52:31 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to undefined function fechaC() in /home4/estrat47/public_html/clientes/sistemaEA/index.php:100
+Stack trace:
+#0 {main}
+  thrown in /home4/estrat47/public_html/clientes/sistemaEA/index.php on line 100
+[28-Apr-2021 19:52:44 America/Mexico_City] PHP Warning:  include(../../functions.php): failed to open stream: No such file or directory in /home4/estrat47/public_html/clientes/sistemaEA/index.php on line 18
+[28-Apr-2021 19:52:44 America/Mexico_City] PHP Warning:  include(../../functions.php): failed to open stream: No such file or directory in /home4/estrat47/public_html/clientes/sistemaEA/index.php on line 18
+[28-Apr-2021 19:52:44 America/Mexico_City] PHP Warning:  include(): Failed opening '../../functions.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home4/estrat47/public_html/clientes/sistemaEA/index.php on line 18
+[28-Apr-2021 19:52:44 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to undefined function fechaC() in /home4/estrat47/public_html/clientes/sistemaEA/index.php:100
+Stack trace:
+#0 {main}
+  thrown in /home4/estrat47/public_html/clientes/sistemaEA/index.php on line 100
+[28-Apr-2021 19:53:04 America/Mexico_City] PHP Warning:  include(../../functions.php): failed to open stream: No such file or directory in /home4/estrat47/public_html/clientes/sistemaEA/index.php on line 18
+[28-Apr-2021 19:53:04 America/Mexico_City] PHP Warning:  include(../../functions.php): failed to open stream: No such file or directory in /home4/estrat47/public_html/clientes/sistemaEA/index.php on line 18
+[28-Apr-2021 19:53:04 America/Mexico_City] PHP Warning:  include(): Failed opening '../../functions.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home4/estrat47/public_html/clientes/sistemaEA/index.php on line 18
+[28-Apr-2021 19:53:04 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to undefined function fechaC() in /home4/estrat47/public_html/clientes/sistemaEA/index.php:100
+Stack trace:
+#0 {main}
+  thrown in /home4/estrat47/public_html/clientes/sistemaEA/index.php on line 100
+[28-Apr-2021 19:56:14 America/Mexico_City] PHP Warning:  include(../../functions.php): failed to open stream: No such file or directory in /home4/estrat47/public_html/clientes/sistemaEA/index.php on line 18
+[28-Apr-2021 19:56:14 America/Mexico_City] PHP Warning:  include(../../functions.php): failed to open stream: No such file or directory in /home4/estrat47/public_html/clientes/sistemaEA/index.php on line 18
+[28-Apr-2021 19:56:14 America/Mexico_City] PHP Warning:  include(): Failed opening '../../functions.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home4/estrat47/public_html/clientes/sistemaEA/index.php on line 18
+[28-Apr-2021 19:56:14 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to undefined function fechaC() in /home4/estrat47/public_html/clientes/sistemaEA/index.php:100
+Stack trace:
+#0 {main}
+  thrown in /home4/estrat47/public_html/clientes/sistemaEA/index.php on line 100

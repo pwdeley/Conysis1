@@ -1,0 +1,49 @@
+/* Optimización de bordes de toda la página*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/*configuración estilo del navegador*/
+nav {
+    text-align: right;
+    height: 50px;
+    line-height: 1px;
+    padding: 12px 50px 0 0;
+    background-color: rgb(138, 124, 113);
+    font: bold 20px letra, Verdana, sans-serif;
+}
+nav > a {
+    color: rgb(247, 240, 240);
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+nav > a:hover { /*efecto que al pasar el puntero aparece la palabra subrayada*/
+    text-decoration: underline;
+}
+
+body {
+    min-height: 150vh;
+    background: #70e1f5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffd194, #70e1f5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffd194, #70e1f5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-size: cover;
+    background-position: center;
+
+}
+
+#nombre.h2 {
+    color: rgb(247, 240, 240);
+}
+
+
+footer {
+    padding: 20px 0;
+    color: #106cad;
+    background: #b9e0ce;
+    text-align: center;
+    margin-top: 300px;
+}

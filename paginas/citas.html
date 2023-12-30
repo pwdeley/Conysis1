@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estratega Contable</title>
+    <link rel="icon" href="../imagenes/logoestratega.png" type="image/x">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.php">Inicio</a>
+            <a href="../paginas/nosotros.html">Nosotros</a>
+            <a href="../paginas/metodologia.html">Metodología</a>
+            <a href="../clientes/index.php">Clientes</a>
+            <a href="">Agende su cita</a>
+        </nav>
+        <section class="banner">
+            <div class="banner-content">
+                 <h1>Estratega Contable</h1><br>
+                <h2>¡Cumplimiento es nuestro compromiso!</h2>
+                
+            </div>
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+        </section>
+    </header>
+    <main>
+        <section class="principal">
+            <h2 class="titulo">Apreciamos tu interés por nuestros servicios.</h2>
+            <div class="servicios">
+                <div class="textoservicios">
+                   
+                   <form action="correo.php" method="post">
+                       <input type="text" placeholder="Tu nombre..." name="nombre" required>
+                       <input type="email" placeholder="Email de contacto" name="correo" required>
+                       <h3>Día y hora en que deseas reunirte vía Zoom:</h3>
+                       <input type="date" placeholder="Fecha de reunión" name="fecha" required>
+                       <textarea placeholder="Aquí tu mensaje..." name="mensaje"></textarea>
+                       <input type="submit" id="boton" value="Enviar Reunión Propuesta">
+                   </form>
+                   
+                    <p>
+                        
+                        En un máximo de 24 horas un asesor se pondrá en contacto contigo.<br><br>
+                        Nos puedes contactar también al email: gerencia@estrategacontable.com <br><br>
+                        Atentos Saludos,<br>
+                        ESTRATEGA CONTABLE<br><br><br><br>
+
+                        <i>"Sólo una cosa vuelve un sueño imposible: el miedo a fracasar."<br>
+                        <strong>Paulo Coelho</strong></i>
+
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. Derechos Reservados. Diseñado por Conysis 2021 <a>Contabilidad y Sistemas</a></p>
+    </footer>
+</body>
+</html>
+
+
+<!-- Código de Dalto que no funcionó:
+ <form method="post">
+                       <input type="text" placeholder="Tu nombre..." name="name" required>
+                       <input type="email" placeholder="Email de contacto" name="email" required>
+                       <h3>Día en que deseas reunirte vía Zoom:</h3>
+                       <input type="date" placeholder="Fecha" name="asunto" required>
+                       <textarea placeholder="Aquí tu mensaje..." name="msg"></textarea>
+                       <input type="submit" value="Enviar Cita Propuesta">
+                   </form>
+                        <?php
+                        include("correo.php");
+                        ?>
+                    <p>
+-->

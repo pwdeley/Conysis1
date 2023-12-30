@@ -1,0 +1,211 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav {
+	text-align: right;
+	height: 50px;
+	line-height: 1px;
+	padding: 30px 50px 0 0;
+	background-color: rgb(138, 124, 113);
+}
+nav > a {
+	color: rgb(247, 240, 240);
+	font-weight: 300;
+	text-decoration: none;
+	margin-right: 10px;
+}
+nav > a:hover {
+	text-decoration: underline;
+}
+.wave {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: calc(100vh - 50px);
+}
+.banner {
+	position: relative;
+	background-attachment: fixed;
+	width: 100%;
+	height: calc(100vh - 50px);
+	background: color #f5f5f5;
+	background-size: cover;
+	background-position: center;
+	transition: all .1s ease-in-out;
+	background-image: url('../imagenes/reunion.jpg') ;
+	animation: banner 28s infinite linear;
+	animation-timing-function:ease-in-out;
+	font-family: "../config/bucephtt.ttf", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.banner-content {
+	margin: 0%;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	background-color: rgba(0, 22, 40, .6);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+	
+}
+.banner-content h1 {
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 30px;
+	font-size: 40px;
+	text-align: center;
+	
+}
+
+.banner-content {
+    animation: 7s none alternate efectotexto;
+}
+   
+  @keyframes efectotexto {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+.banner-content a{
+	text-decoration: none;
+	color: #fff;
+	padding: 9px 20px;
+	border: 1px solid #fff;
+	text-transform: uppercase;
+	transition: all .3s ease-in-out;
+}
+.banner-content a:hover{
+	background-color: #fff;
+	color: #333;
+}
+@keyframes banner {
+	0% {background-image: url(../imagenes/reunion.jpg);}
+	30% {background-image: url(../imagenes/reunion.jpg);}
+
+	35% {background-image: url(../imagenes/capacitacion.jpg);}
+	65% {background-image: url(../imagenes/capacitacion.jpg);}
+
+	70% {background-image: url(../imagenes/colaboracion.jpg);}
+	100% {background-image: url(../imagenes/colaboracion.jpg);}
+}
+
+
+.principal {
+	padding: 60px 0;
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+	height: 900px;
+}
+
+.titulo {
+	color: #642a73;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+/*Nuestros Servicios*/
+.servicios {
+	display: flex;
+	justify-content: space-evenly;
+}
+.imagenservicios {
+	width: 25%;
+	height: 680px;
+}
+.servicios .textoservicios{
+	width: 48%;
+}
+.textoservicios h3 {
+	margin-bottom: 15px;
+}
+.textoservicios h3 span {
+	background:#4d0686;
+	color: #fff;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	padding: 2px;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+	margin-right: 5px;
+}
+.textoservicios p {
+padding: 0px 0px 30px 15px;
+font-weight: 300;
+text-align: justify;
+}
+/*Galeria*/
+.contabilidad {
+	background: #cccbd6;
+	height: 300px;
+	
+}	
+.galeria-contab {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.imagen-contab {
+	width: 24%;
+	height: 150px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, .5);
+}
+.imagen-contab > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+.hover-galeria {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	transform: scale(0);
+	background: hsla(273, 91%, 27%, 0.7);
+	transition: transform .5s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.hover-galeria img {
+	width: 50px;
+}
+.hover-galeria p{
+	color: #fff;
+}
+.imagen-contab:hover .hover-galeria {
+	transform: scale(1);
+}
+
+footer {
+	padding: 50px 0;
+	color: #adb8c0;
+	background: #31404a;
+	text-align: center;
+}
